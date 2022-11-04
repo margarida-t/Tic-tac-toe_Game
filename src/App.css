@@ -1,10 +1,13 @@
 body {
     font: 20px "Century Gothic", Futura, sans-serif;
     margin: 20px;
+  }
+
+  .alignDiv {
     position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   .board-row:after {
     clear: both;
@@ -96,4 +99,17 @@ body {
 
   .mainContainerResetButton .container {
     display: flex;
+    justify-content: space-around;
+  }
+
+  .boardLignBackgroundColor {
+    background-color: #AAE5FC;
+  }
+
+  .container .row {
+    --bs-gutter-x: 1rem;
+  }
+
+  .fontSizeTitle {
+    font-size: 50px;
   }

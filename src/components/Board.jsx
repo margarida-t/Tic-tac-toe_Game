@@ -60,7 +60,7 @@ const Board = ({player, clickEvent, isCleanBoard, cleanDoneEvent, whoWins, draw}
     }
 
     return (
-        <div className ="marginLeft">
+        <div>
             <div className ="board-row">
                 <Square value={squares[0]} onClick = {() => handleClick(0)} isFinished = {isFinished}/>
                 <Square value={squares[1]} onClick = {() => handleClick(1)} isFinished = {isFinished}/>

@@ -52,11 +52,13 @@ function App() {
   }
 
   return (
-
-    <div className = "alignDiv">
-      <Board player = {currentPlayer} clickEvent = {setCurrentPlayer} isCleanBoard = {isClean} cleanDoneEvent = {() => handlerCleanDone()} whoWins = {(winner) => handlerWhoWins(winner)} draw = {() => handlerDraw()}></Board>
-      <NotificationGame player= {currentPlayer} winner={whoWins} resetClick ={() => handlerResetClick()} newGameClick = {() => handlerNewGameClick()} draw ={drawNotification}></NotificationGame>
-      <Table totalWinX= {totalWinX} totalWinO= {totalWinO} totalDraws = {totalDraws}></Table>
+    <div>
+      <div className="fw-bold mt-5 text-center text-primary text-uppercase fontSizeTitle">Tic-tac-toe Game</div>
+        <div className = "alignDiv">
+          <Board player = {currentPlayer} clickEvent = {setCurrentPlayer} isCleanBoard = {isClean} cleanDoneEvent = {() => handlerCleanDone()} whoWins = {(winner) => handlerWhoWins(winner)} draw = {() => handlerDraw()}></Board>
+          <NotificationGame player= {currentPlayer} winner={whoWins} resetClick ={() => handlerResetClick()} newGameClick = {() => handlerNewGameClick()} draw ={drawNotification}></NotificationGame>
+          <Table totalWinX= {totalWinX} totalWinO= {totalWinO} totalDraws = {totalDraws}></Table>
+        </div>
     </div>
   )
 }
